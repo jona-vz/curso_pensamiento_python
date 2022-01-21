@@ -1,3 +1,4 @@
+#Uso de las afirmaciones 'assert' como validacion de tipo y longitud
 # assert <expresion booleana>, <mensaje de error>
 
 def primera_letra(lista_de_palabras):
@@ -17,5 +18,5 @@ def primera_letra(lista_de_palabras):
     return primeras_letras
 
 
-lista_palabras = ['People', 'likes', 'parties']
+lista_palabras = ['People', 'like', 'parties', 'and', 'tequila']
 print(primera_letra(lista_palabras))
