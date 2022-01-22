@@ -6,6 +6,7 @@ def primera_letra(lista_de_palabras):
     Devuelve un list con las primeras letras de cada palabra de la lista que se recibe. Por medio de asserts valída la el contenido del parametro.
 
     param   list lista_de_palabras Una lista de palabras donde todos los elementos sean de tipo str y no sean vacíos 
+    returns un list con las primeras letras de cada palabra 
     '''
     primeras_letras = []
 
@@ -17,6 +18,6 @@ def primera_letra(lista_de_palabras):
     
     return primeras_letras
 
-
-lista_palabras = ['People', 'like', 'parties', 'and', 'tequila']
-print(primera_letra(lista_palabras))
+if __name__ == '__main__':
+    lista_palabras = ['People', 'like', 'parties', 'and', 'tequila']
+    print(primera_letra(lista_palabras))

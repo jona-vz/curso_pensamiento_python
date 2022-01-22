@@ -6,6 +6,7 @@ def raiz_cuadrada (objetivo, epsilon=0.01):
 
     param int objetivo  Cualquier numero entero que se quiera obtener su raiz caudrada
     param float epsilon Error minimo de aproximacion en la raiz. El valor por defecto es 0.01
+    returns la raiz cuadrada de objetivo
     '''
     paso = epsilon**2
     respuesta = 0.0
@@ -19,9 +20,11 @@ def raiz_cuadrada (objetivo, epsilon=0.01):
         print(f'No se encontro la raiz cuadrada de {objetivo}')
     else:
         print(f'La raiz cuadrada de {objetivo} es {respuesta}')
+
+    return respuesta
     
 
 
-
-objetivo = int (input ('Escoge un entero: '))
-resultado = raiz_cuadrada(objetivo)
+if __name__=='__main__':
+    objetivo = int (input ('Escoge un entero: '))
+    resultado = raiz_cuadrada(objetivo)

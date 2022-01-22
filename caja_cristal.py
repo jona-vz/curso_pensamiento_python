@@ -1,7 +1,16 @@
+#Pruebas de caja de cristal
+#Sabemos cual es el funcionamiento general de la funcion. Se prueban los distintos escenarios de respuesta individual. 
+
 import unittest
 
 
 def mayor_de_edad (edad):
+    '''
+    Devuelve True si la edad introducida es perteneciente a una persona mayor de edad
+
+    param int edad cualquier edad positiva
+    returns true si es mayor de 18 años. De lo contrario es false
+    '''
     if edad >= 18:
         return True
     else:
@@ -9,7 +18,7 @@ def mayor_de_edad (edad):
 
 
 class PruebaDeCristalTest(unittest.TestCase):
-    
+    #definimos los dos casos posibles, mayor y menor de edad    
     def test_es_mayor_de_edad(self):
         edad = 20
         resultado = mayor_de_edad(edad)
