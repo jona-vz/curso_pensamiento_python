@@ -1,3 +1,5 @@
+#recursividad python
+
 def factorial (n):
     """
     Calcula el factorial de n.
@@ -10,5 +12,6 @@ def factorial (n):
 
     return n * factorial(n-1)
 
-n = int(input ('Escribe un entero: '))
-print(factorial(n))
+if __name__=='__main__':
+    n = int(input ('Escribe un entero: '))
+    print(factorial(n))
